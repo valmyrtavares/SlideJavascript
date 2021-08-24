@@ -1,0 +1,13 @@
+.content{
+    width:50%;
+    margin: 10px auto;
+}
+.content img{
+    width: 100%;
+}
+h1{
+    text-align: center;
+    font-family:monospace;
+    color:red;
+
+}
