@@ -1,0 +1,69 @@
+h1{
+    color:red;
+    text-align: center;;
+}
+div{
+    width:70%;
+    margin:20px auto;
+}
+div img{
+    width: 100%;
+    display:none;
+}
+.show{
+    display:block;
+    animation:show .5s
+}
+@keyframes show{
+    from{
+        opacity:0;
+        transform:translate3d(-30px, 0, 0)
+    }
+    to{
+        opacity:1;
+        transform:translate3d(0,0,0)
+    }
+}
+ul{
+    list-style: none;
+    display:flex;   
+    position:absolute;
+    width: 30%;
+    top:450px;
+    margin: 1px 25%;
+}
+ul li{
+    background:gray;
+    width: 20px;
+    height: 20px;
+    margin:12px;
+    border-radius: 5px;
+}
+.change-color{
+    background:red;
+}
+.anima{
+    animation:show .5s
+}
+@keyframes show{
+    from {
+        opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    }
+    to{
+        opacity:1;
+        transform: translate3d(0px, 0, 0);
+    }
+}
+main{
+    position:absolute;
+    width: 60%;
+    margin:0 15%;
+    top: 500px;
+    display:flex;
+    justify-content: space-between;
+}
+main button{
+    background:green;
+    color:white;
+}

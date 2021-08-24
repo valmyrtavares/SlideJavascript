@@ -16,3 +16,6 @@ Por que não funciona
 
 Ainda não sei mas consegui fazer ele funcioar dentro de um script simples no html
 sem classes
+
+Um solução não muito digna é colar o meu proprio código que não funcionou e depois
+recriá-lo passo a passo

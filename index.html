@@ -2,39 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">/>
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <title>JSSLIDE</title>
 </head>
 <body>
-    <h1>Usando Carrossel</h1>
-    <div class="content">
-        <img class="hide" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-roma-capa2019-01.jpg" alt="roma"/>
-        <img class="hide" src="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/139497167.jpeg" alt="roma"/>
-        <img class="hide" src="https://h8f7z4t2.stackpathcdn.com/wp-content/uploads/2016/08/vistadeflorenC3A7a.jpg" alt="roma"/>
-        <img class="hide"src="https://cenciturismo.com.br/wp-content/uploads/2019/10/florenca-italia-foto-1900-artevita-600x380.jpg" alt="roma"/>
+    <h1>Meu slide de Paris é lindo</h1>
+    <div>
+        <img src="https://www.romapravoce.com/wp-content/uploads/2015/12/panteao-de-roma_2.jpg" alt="">
+        <img src="https://veja.abril.com.br/wp-content/uploads/2016/05/alx_lista-capitais-europa-mundo-20100806-002_original3.jpeg" alt="">
+        <img src="https://www.viajologoexisto.com.br/wp-content/uploads/2014/12/O62A2120.jpg" alt="">
+        <img src="https://s3.amazonaws.com/comunitaitaliana.com/wp-content/uploads/2020/05/29155756/floren%C3%A7aa.jpg" alt="">
     </div>
-    <button >Seguinte</button>
-    <button>Anterior</button>
-    <!-- <script type="module" src="js/script.js"> -->
-        <script>
-        let  img =  document.querySelectorAll('img');
-        let  btn =  document.querySelectorAll('button');
-        btn[0].addEventListener('click', ()=>{
-            clearInterval(stop)
-        })
-        let num = 0
-        function loop(N) {
-            num++;
-             console.log(num);
-        }
-      const stop=  setInterval(loop, 1000, N=0);
-
-
-        </script>
-       
-    </script>
+    
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+<main>
+    <button>back</button>
+    <button>forward</button>
+</main>
+    
+ 
+    <script type="module" src="js/script.js">
+    </script>    
 </body>
 </html>
-
