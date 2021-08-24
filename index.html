@@ -17,7 +17,22 @@
     </div>
     <button >Seguinte</button>
     <button>Anterior</button>
-    <script type="module" src="js/script.js">
+    <!-- <script type="module" src="js/script.js"> -->
+        <script>
+        let  img =  document.querySelectorAll('img');
+        let  btn =  document.querySelectorAll('button');
+        btn[0].addEventListener('click', ()=>{
+            clearInterval(stop)
+        })
+        let num = 0
+        function loop(N) {
+            num++;
+             console.log(num);
+        }
+      const stop=  setInterval(loop, 1000, N=0);
+
+
+        </script>
        
     </script>
 </body>

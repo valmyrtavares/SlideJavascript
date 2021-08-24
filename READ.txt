@@ -13,3 +13,6 @@ cada um a um método diferente um para trás outro para frente
 
 Fiz o clearInterval e não funcionamento
 Por que não funciona
+
+Ainda não sei mas consegui fazer ele funcioar dentro de um script simples no html
+sem classes

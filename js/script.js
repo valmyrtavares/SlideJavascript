@@ -1,4 +1,4 @@
-import Slide from "./module/slide.js"
+import {contarate10} from "./module/slide.js"
 
 const slide = new Slide();
-slide.init();
+slide.contarate10();
