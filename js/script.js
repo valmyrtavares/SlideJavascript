@@ -1,0 +1,1 @@
+import Slide from "./module/slide.js"
