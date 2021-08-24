@@ -1,3 +1,5 @@
 Fazendo a conexão entre o script e o módulo com a
 exportação da classe e importação no script vindo
 tudo para o html e só
+
+2 Peguei pelo class todas as imagens
