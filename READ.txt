@@ -10,3 +10,6 @@ ordem impacta diretamente no funcionamento  e fiz a aminação no css
 
 Fiz e selecionei os botões de forma fake e fiz a seleção dos botões e atrelei 
 cada um a um método diferente um para trás outro para frente
+
+Fiz o clearInterval e não funcionamento
+Por que não funciona
