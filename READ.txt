@@ -28,3 +28,24 @@ com a função back de formas diferentes o resultado
 ter acesso ao this ela precisa ou usar o bind ou usar uma arrow function para 
 que ele tenha acesso ao this. Quero marcar isso de uma forma mais funda e por isso
 vou comitar o código do jeito que está para que fique registrado isso.
+
+Esse commit faz apelo a uma nova fase de aprendizado. De não reescrever o código de uma coisa
+cada vez que eu tenha necessidade dela. Que daqui pra frente eu possa fazer intrumentos que eu 
+reaproveite com poucas linhas. Essa é a proposta desse commit.
+É um slide show com dois botões para trás e para frente
+Importante Tantos as imagens quanto os botões podem ser qualquer coisa, no caso das
+imagens que deves ser mostradas na sequencia dentro do slide, podem ser de qualquer número
+já o slide se adequa automáticamente. O que vai ficar no lugar dos botões é que precisam ser
+apenas dois um pra frente outro para trás. Pelo menos nesse momento.
+COMO PROCEDER
+1-Faça com que as imagens ganhem um display block, ou seja elas começam escondidas
+2-Faça uma classe .show{display:block} 
+3 faça um script dentro do html puxando o script principal que está na pasta js não esqueça do type="modules"
+4 Preencha dois paremetros dentro das classe slide instanciadas. O primeiro argumento sãos as imagens 
+ou o que vai rodar dentro do slide e o segundo o que vai fazer o papel de button. 
+Se tudo estiver certo e nada estiver errado. O slide já sai fucionando com os botões para frente e para trás
+fazendo o seu papel.
+Vou comitar um indexfake junto para que fique de exemplo do que eu estou dizendo, já que 
+na data que estou escrendo esse texto a minha certeza é relativa e frágil.
+O próximo passo é fazer as bolinhas marcando cada elemento mas isso fica para a próxima versão
+do slide.

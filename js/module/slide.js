@@ -1,59 +1,64 @@
 export default class slide{
 
-  constructor(){
-    this.img = document.querySelectorAll('img')
-    this.btn = document.querySelectorAll('button')
+  constructor(img,target){
+    this.img = document.querySelectorAll(img)
+    this.btn = document.querySelectorAll(target)
     this.count = 0;
-
   }
+ 
 
   addEvent(){
-    this.btn[0].addEventListener("click", this.back)
+    this.btn[0].addEventListener("click", ()=>{
+      this.back();
+    })
     this.btn[1].addEventListener("click",()=>{
       this.forward()
     } )
-    this.setImg();
-    
+    this.setImg();    
   }
 
   back(){
+    this.count--;    
+    if(this.count===-1)this.count=3
     clearInterval(this.stopSlide)
-    console.log(this.img)
-  }
-  forward(){
-   // if(this.cont==4) this.cont=0;
-    clearInterval(this.stopSlide);
-    console.log("conhece " + this.img)
-    console.log(this.img)
-    // this.img.forEach(item=>{
-    //     item.classList.remove('show')
-    // })
-    this.img[this.cont].classList.add('show')
-   // this.setColor(this.cont)
+    this.img.forEach(item=>{
+      item.classList.remove('show')
+    })
+    console.log(this.count);
     this.setImg();
-}
+  }
+
+
+  forward(){    
+    this.count++;
+    if(this.count>this.limit){
+       this.count=0;
+      }
+    clearInterval(this.stopSlide);    
+    this.img.forEach(item=>{
+        item.classList.remove('show')
+    })   
+    this.setImg();
+  }
 
   setImg(){
-    let limit = this.img.length - 1;
-    this.img[limit].classList.add('show')
+    this.limit = this.img.length - 1;
+    this.img[this.count].classList.add('show')
      this.stopSlide = setInterval(()=>{
        this.img.forEach(item =>{
          item.classList.remove("show")
        })
        this.count++;
-       if(this.count>limit){
+       if(this.count>this.limit){
          this.count=0
        }
        this.img[this.count].classList.add("show")
+       console.log(this.count);
      },1500)
   }
 
-
-
-  init(){    
-    
-    this.addEvent()
-    
+  init(){        
+    this.addEvent()    
   }
 }
 
