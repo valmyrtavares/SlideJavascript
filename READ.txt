@@ -19,3 +19,12 @@ sem classes
 
 Um solução não muito digna é colar o meu proprio código que não funcionou e depois
 recriá-lo passo a passo
+
+PONTO IMPORTANTE Esse é um ponto que eu já sabia
+mas aqui toma um outro ponto. A função forward 
+recebe um evento do click dentro de addEvent junto
+com a função back de formas diferentes o resultado
+é que da forma que a função back recebe o evento ela não tem acesso ao this para
+ter acesso ao this ela precisa ou usar o bind ou usar uma arrow function para 
+que ele tenha acesso ao this. Quero marcar isso de uma forma mais funda e por isso
+vou comitar o código do jeito que está para que fique registrado isso.
